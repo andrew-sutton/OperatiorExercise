@@ -11,13 +11,13 @@ namespace OperatorExercise
             Console.WriteLine("Please input Second Number:");
             int b = int.Parse(Console.ReadLine());
 
-            Addition(a, b);
+            AdditionResult(a, b);
 
-            Subtraction(a, b);
+            SubtractionResult(a, b);
 
-            Multiplication(a, b);
+            MultiplicationResult(a, b);
 
-            Division(a, b);
+            DivisionResult(a, b);
 
             Console.WriteLine("What is the radius of your circle?");
             double radius = double.Parse(Console.ReadLine());
@@ -25,22 +25,22 @@ namespace OperatorExercise
             AreaOfCircle(radius);
 
         }
-        public static void Addition(int a, int b)
+        public static void AdditionResult(int a, int b)
         {
             var result = a + b;
             Console.WriteLine($"{a}+{b} is {result}");
         }
-        public static void Subtraction(int a, int b)
+        public static void SubtractionResult(int a, int b)
         {
             var result = a - b;
             Console.WriteLine($"{a}-{b} is {result}");
         }
-        public static void Multiplication(int a, int b)
+        public static void MultiplicationResult(int a, int b)
         {
             var result = a * b;
             Console.WriteLine($"{a}*{b} is {result}");
         }
-        public static void Division(int a, int b)
+        public static void DivisionResult(int a, int b)
         {
             var quotient = a / b;
             var remainder = a % b;
