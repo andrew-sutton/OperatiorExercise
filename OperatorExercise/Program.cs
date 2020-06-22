@@ -6,9 +6,9 @@ namespace OperatorExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please input A:");
+            Console.WriteLine("Please input First Number:");
             int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please input B:");
+            Console.WriteLine("Please input Second Number:");
             int b = int.Parse(Console.ReadLine());
 
             Addition(a, b);
@@ -42,10 +42,10 @@ namespace OperatorExercise
         }
         public static void Division(int a, int b)
         {
-            var result = a / b;
-            var quotient = a % b;
+            var quotient = a / b;
+            var remainder = a % b;
 
-            Console.WriteLine($"{a}/{b} is {result} remainder {quotient}");
+            Console.WriteLine($"{a}/{b} is {quotient} remainder {remainder}");
         }
         public static void AreaOfCircle(double radius)
         {
